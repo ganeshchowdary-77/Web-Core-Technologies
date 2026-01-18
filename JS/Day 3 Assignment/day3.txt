@@ -1,0 +1,2 @@
+Dynamic Farm House Booking Form using JavaScript
+  Integrated JavaScript into the existing HTML farm house booking form to make it dynamic.
