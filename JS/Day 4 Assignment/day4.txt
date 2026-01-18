@@ -1,0 +1,3 @@
+Purchase Order (PO) and Invoice Management System (JavaScript)
+  Develop a JavaScript-based PO and Invoice Management System with automatic PO and invoice number generation, 
+  payment calculation based on hourly/daily/monthly rates, invoice generation after training completion, due date tracking, and overdue payment notifications.
