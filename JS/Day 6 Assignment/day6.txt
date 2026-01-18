@@ -1,0 +1,3 @@
+System Design: Financial Dashboard for Client–Freelancer Platform
+  Design a system architecture for a financial dashboard similar to GUVI, connecting clients and freelancers. 
+  The assignment includes defining database schemas, API endpoints, microservices architecture, and implementing role-based access for different users and was completed as part of a team of five members.
