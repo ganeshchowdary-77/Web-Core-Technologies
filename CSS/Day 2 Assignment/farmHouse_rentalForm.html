@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm House</title>
+    <link rel="stylesheet" href="./farmHouse_rentalForm.css">
+</head>
+<body>
+
+    <main>
+        <form class="form-container" action="./submitForm" method="get">
+            <h1 class="title" >Booking Request</h1>
+
+            <fieldset>
+
+                <h2 class="sub-title">Personal Information</h2>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" name="fullname" id="fullname" required>
+
+    
+                
+                <label for="phoneNumber">Mobile Number:</label><br>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required pattern="[0-9]{10}">
+            </fieldset>
+
+            <fieldset>
+                <h2 class="sub-title">Rental Details</h2>
+                <div class="category">
+                    <label for="category">Category:</label><br>
+                    <select name="category" id="category" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="compact">Compact</option>
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                    </select>
+                </div>
+
+                <div class="purpose">
+                    <label for="purpose">Purpose:</label>
+                    <input type="radio" name="purpose" id="family" value="family" required>
+                    <label for="family">Family</label>
+                    <input type="radio" name="purpose" id="friends" value="friends" required>
+                    <label for="friends">Friends</label>
+                    <input type="radio" name="purpose" id="corporate" value="corporate" required>
+                    <label for="corporate">Corporate</label>
+                </div>
+                
+                <div class="guests">
+                    <label for="guests">Number of Guests:</label><br>
+                    <input type="number" name="guests" id="guests" min="1" max="50" required><br>
+                    <small>(Maximum 50 guests allowed)</small>
+                </div>
+
+                <div class="additional-services">
+                    <h4>Additional Services</h4>
+                    <input type="checkbox" id="decoration" name="services[]" value="decoration">
+                    <label for="decoration">Decoration</label><br>
+                    <input type="checkbox" id="music" name="services[]" value="music">
+                    <label for="music">Music</label><br>
+                    <input type="checkbox" id="kitchen" name="services[]" value="kitchen">
+                    <label for="kitchen">Kitchen</label><br>
+                    <input type="checkbox" id="swimming" name="services[]" value="swimming">
+                    <label for="swimming">Swimming Pool</label><br>
+                    <input type="checkbox" id="sports" name="services[]" value="sports">
+                    <label for="sports">Sports</label><br>
+                    <input type="checkbox" id="movie" name="services[]" value="movie">
+                    <label for="movie">Movie Theater</label><br>
+                </div>
+                
+                <div class="timings">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" name="checkin" id="checkin" required><br>
+                    
+                    <label for="checkinTime">Check-in Time:</label>
+                    <input type="time" name="checkinTime" id="checkinTime" required>
+                    
+                    
+                    
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" name="checkout" id="checkout" required><br>
+                    
+                    <label for="checkoutTime">Check-out Time:</label>
+                    <input type="time" name="checkoutTime" id="checkoutTime" required>
+                </div>
+            </fieldset>
+
+            
+
+            <button class="submit-btn" type="submit">Request Booking</button>
+            <button class="wtsp-btn"><a href="https://wa.me/9380202261?text=I%20want%20to%20book%20farmhouse" target="_blank">Book on WhatsApp</a></button>
+        </form>
+    </main>
+
+</body>
+</html>
