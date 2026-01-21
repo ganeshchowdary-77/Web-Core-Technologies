@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox vs Grid – Product Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Flexbox vs Grid – Product Layout</h1>
+  <p>Same products • Different layout systems</p>
+</header>
+
+<!-- ================= FLEXBOX ================= -->
+<section>
+  <h2>Flexbox Layout (1D)</h2>
+  <p class="description">
+    Flexbox aligns items in a single direction (row/column). Great for responsive rows.
+  </p>
+
+  <div class="flex-container">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" />
+      <h3>Smart Watch</h3>
+      <p>$120</p>
+      <button>Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155228f6d1?w=400" />
+      <h3>Headphones</h3>
+      <p>$90</p>
+      <button>Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1512499617640-c2f999fe6f73?w=400" />
+      <h3>Sneakers</h3>
+      <p>$150</p>
+      <button>Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400" />
+      <h3>Backpack</h3>
+      <p>$80</p>
+      <button>Buy</button>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ================= GRID ================= -->
+<section>
+  <h2>Grid Layout (2D)</h2>
+  <p class="description">
+    Grid controls rows and columns together. Ideal for dashboards & product galleries.
+  </p>
+
+  <div class="grid-container">
+
+    <!-- 2x2 -->
+    <div class="product grid-big">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600" />
+      <h3>Featured Shoes</h3>
+      <p>$300</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 1x1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400" />
+      <h3>Laptop</h3>
+      <p>$1100</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 1x2 -->
+    <div class="product grid-tall">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" />
+      <h3>Camera</h3>
+      <p>$700</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 2x1 -->
+    <div class="product grid-wide">
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=600" />
+      <h3>Gaming Console</h3>
+      <p>$500</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 1x1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" />
+      <h3>Mobile Phone</h3>
+      <p>$999</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 1x1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" />
+      <h3>Wireless Earbuds</h3>
+      <p>$180</p>
+      <button>Buy</button>
+    </div>
+
+    <!-- 1x1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" />
+      <h3>Sports Shoes</h3>
+      <p>$140</p>
+      <button>Buy</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Pure HTML + CSS | Flexbox vs Grid</p>
+</footer>
+
+</body>
+</html>
