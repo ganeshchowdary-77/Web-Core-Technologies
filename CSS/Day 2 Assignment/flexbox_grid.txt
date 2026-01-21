@@ -1,1 +1,0 @@
-Responsive Product List Layout using Flexbox & Grid
