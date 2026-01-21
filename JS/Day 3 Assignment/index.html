@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm House Booking</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Farm House Booking</h1>
+    <p>Plan your perfect getaway</p>
+</header>
+
+<main>
+    <form id="bookingForm">
+        <fieldset>
+            <h2>Personal Information</h2>
+
+            <label>Full Name</label>
+            <input type="text" id="fullname" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" id="phoneNumber" required pattern="[0-9]{10}">
+        </fieldset>
+
+        <fieldset>
+            <h2>Rental Details</h2>
+
+            <label>Category</label>
+            <select id="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="Compact">Compact</option>
+                <option value="Standard">Standard</option>
+                <option value="Deluxe">Deluxe</option>
+            </select>
+
+            <label>Purpose</label>
+            <div class="radio-group">
+                <label><input type="radio" name="purpose" value="Family" required> Family</label>
+                <label><input type="radio" name="purpose" value="Friends"> Friends</label>
+                <label><input type="radio" name="purpose" value="Corporate"> Corporate</label>
+            </div>
+
+            <label>Number of Guests</label>
+            <input type="number" id="guests" min="1" max="50" required>
+
+            <h4>Additional Services</h4>
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Decoration"> Decoration</label>
+                <label><input type="checkbox" value="Music"> Music</label>
+                <label><input type="checkbox" value="Kitchen"> Kitchen</label>
+                <label><input type="checkbox" value="Swimming Pool"> Swimming Pool</label>
+                <label><input type="checkbox" value="Sports"> Sports</label>
+                <label><input type="checkbox" value="Movie Theater"> Movie Theater</label>
+            </div>
+
+            <label>Check-in</label>
+            <input type="date" id="checkin" required>
+            <input type="time" id="checkinTime" required>
+
+            <label>Check-out</label>
+            <input type="date" id="checkout" required>
+            <input type="time" id="checkoutTime" required>
+        </fieldset>
+
+        <button type="submit">Send Booking via WhatsApp</button>
+    </form>
+</main>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
