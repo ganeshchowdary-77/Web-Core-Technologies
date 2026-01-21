@@ -1,2 +1,0 @@
-REST API, Database, and CRUD Design for Insurance Application
-
