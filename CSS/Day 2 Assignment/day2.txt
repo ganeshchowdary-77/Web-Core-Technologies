@@ -1,0 +1,2 @@
+day 2
+  Responsive Product List Layout using Flexbox & Grid
